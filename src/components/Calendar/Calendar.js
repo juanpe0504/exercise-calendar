@@ -2,11 +2,7 @@ import React from "react";
 import { calendarHeader } from "../../utils/constants";
 import moment from "moment";
 
-const Calendar = ({
-  today,
-  monthDays,
-  weatherInfo
-}) => {
+const Calendar = ({ today, monthDays, weatherInfo }) => {
   return (
     <div>
       <div className="row text-center text-primary font-weight-bold">

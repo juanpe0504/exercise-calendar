@@ -1,15 +1,20 @@
 import React from "react";
 
 const selectorStyle = {
-  borderTop: 'none',
-  borderLeft: 'none',
-  borderRight: 'none',
-  borderRadius: '0'
-}
+  borderTop: "none",
+  borderLeft: "none",
+  borderRight: "none",
+  borderRadius: "0"
+};
 
-const Selector = ({options, handleChange, value}) => {
+const Selector = ({ options, handleChange, value }) => {
   return (
-    <select onChange={handleChange} value={value} className='form-control' style={selectorStyle}>
+    <select
+      onChange={handleChange}
+      value={value}
+      className="form-control"
+      style={selectorStyle}
+    >
       {options.map((option, index) => {
         return (
           <option key={index} value={option.value}>
@@ -18,7 +23,7 @@ const Selector = ({options, handleChange, value}) => {
         );
       })}
     </select>
-  )
-}
+  );
+};
 
 export default Selector;

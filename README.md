@@ -10,7 +10,7 @@
  yarn start / npm start
 ```
 
-#### For run tests:
+#### For running tests:
 
 ```
  yarn test

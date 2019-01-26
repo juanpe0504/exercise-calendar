@@ -9,7 +9,7 @@ test("Generating Calendar from today should have 6 rows and 7 columns per row", 
   expect(calendar[0].length).toBe(7);
 });
 
-test("Generating Calendar from a day on 2019 april should be correct", () => {
+test("Generating Calendar on 2019 April should be correct", () => {
   const today = moment().month(3).year(2019).date(1);
   const calendar = generateCalendar(today.month(), today.year());
   expect(calendar).not.toBe(null);
@@ -18,7 +18,7 @@ test("Generating Calendar from a day on 2019 april should be correct", () => {
   expect(calendar).toEqual(mockCalendarApril2019);
 });
 
-test("Generating Calendar from a day on 2018 december should be correct", () => {
+test("Generating Calendar on 2018 December should be correct", () => {
   const today = moment().month(11).year(2018).date(1);
   const calendar = generateCalendar(today.month(), today.year());
   expect(calendar).not.toBe(null);
@@ -52,7 +52,6 @@ test("YearOptions should list correct data", () => {
   expect(options[0].value).toBe(moment().year() - QANTITY_YEARS);
   expect(options[options.length-1].value).toBe(moment().year() + QANTITY_YEARS);
 });
-
 
 const mockCalendarApril2019 = [
   [

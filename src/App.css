@@ -1,0 +1,12 @@
+.row-heigth {
+  height: 50px;
+}
+
+.form-control:focus {
+  border-color: transparent;
+  box-shadow: none !important;
+}
+
+select {
+  text-align-last: right;
+}

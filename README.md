@@ -41,3 +41,6 @@ Additionally, the calendar should be able to display the temperature and weather
 
   - Unit tests are not explicitly required, but we will appreciate them.
 
+#### Mock Example
+
+![Mock](images/mock.png)
